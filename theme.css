@@ -5,3 +5,75 @@ Designed to be used with Style Settings plugin.
 MIT License. Copyright 2026 Cory Bissett (@corybiscuit).
 */
 @charset "UTF-8";
+
+/* Folder Highlights */
+:root {
+    --color-folder-salmon: #ef476f;
+    --color-folder-peach: #f7c59f;
+    --color-folder-gold: #ffd166;
+    --color-folder-emerald: #06d6a0;
+    --color-folder-ocean: #118ab2;
+}
+
+.theme-light {
+    --color-folder-text: #2e3440df;
+    --color-left-border: #2e344020;
+    --color-hover-file #00000013;
+}
+
+.theme-dark {
+    --color-folder-text: #2e3440e9;
+    --color-left-border: #2e344032;
+    --color-hover-file: #00000013;
+}
+
+/* Icon & Text color for all folders */
+.nav-folder .is-collapsed .collapse-icon svg.svg-icon,
+.nav-folder .collapse-icon svg.svg-icon,
+.nav-folder .nav-folder-title,
+.nav-folder .nav-file-title {
+    color: var(--color-folder-text) !important;
+}
+
+/* Left borders for subfolders */
+
+.nav-folder .nav-folder-children {
+    border-left: 2px solid var(--color-left-border) !important;
+}
+
+/* Rounding for all folders */
+
+.nav-folder {
+    border-radius: 6px !important;
+}
+
+/* Hover color */
+
+.nav-file-title:hover,
+.nav-file-title.is-active,
+.nav-folder-title:hover,
+.nav-folder-title.is-active {
+    background-color: var(--color-hover-file) !important;
+}
+
+/* Colors for my folders */
+
+.nav-folder:has(div[data-path^="+"]) {
+    background-color: var(--color-folder-salmon) !important;
+}
+
+.nav-folder:has(div[data-path^="Atlas"]) {
+    background-color: var(--color-folder-peach) !important;
+}
+
+.nav-folder:has(div[data-path^="Calendar"]) {
+    background-color: var(--color-folder-gold) !important;
+}
+
+.nav-folder:has(div[data-path^="Efforts"]) {
+    background-color: var(--color-folder-emerald) !important;
+}
+
+.nav-folder:has(div[data-path^="x"]) {
+    background-color: var(--color-folder-ocean) !important;
+}
