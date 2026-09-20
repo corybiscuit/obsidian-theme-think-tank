@@ -6,6 +6,21 @@ MIT License. Copyright 2026 Cory Bissett (@corybiscuit).
 */
 @charset "UTF-8";
 
+/* 
+Key Fixes
+
+Essential theme fixes such as callout icon centering, etc.
+*/
+.callout-title {
+  align-items: center;
+}
+.callout-fold,
+.callout-icon {
+  margin-top: unset;
+  align-self: unset;
+}
+
+
 /* Folder Highlights */
 :root {
     --color-folder-salmon: #ef476f;
