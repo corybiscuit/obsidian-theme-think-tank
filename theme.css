@@ -23,11 +23,11 @@ Essential theme fixes such as callout icon centering, etc.
 
 /* Folder Highlights */
 :root {
-    --color-folder-salmon: #ef476f;
-    --color-folder-peach: #f7c59f;
-    --color-folder-gold: #ffd166;
-    --color-folder-emerald: #06d6a0;
-    --color-folder-ocean: #118ab2;
+    --color-folder-coral: #f79b9b;
+    --color-folder-sage: #96C979;
+    --color-folder-gold: #F5C05C;
+    --color-folder-sky-blue: #8DBEDD;
+    --color-folder-periwinkle: #B8A0EE;
 }
 
 .theme-light {
@@ -60,6 +60,7 @@ Essential theme fixes such as callout icon centering, etc.
 
 .nav-folder {
     border-radius: 6px !important;
+    margin-bottom: 6px; 
 }
 
 /* Hover color */
@@ -74,11 +75,11 @@ Essential theme fixes such as callout icon centering, etc.
 /* Colors for my folders */
 
 .nav-folder:has(div[data-path^="+"]) {
-    background-color: var(--color-folder-salmon) !important;
+    background-color: var(--color-folder-coral) !important;
 }
 
 .nav-folder:has(div[data-path^="Atlas"]) {
-    background-color: var(--color-folder-peach) !important;
+    background-color: var(--color-folder-sage) !important;
 }
 
 .nav-folder:has(div[data-path^="Calendar"]) {
@@ -86,9 +87,8 @@ Essential theme fixes such as callout icon centering, etc.
 }
 
 .nav-folder:has(div[data-path^="Efforts"]) {
-    background-color: var(--color-folder-emerald) !important;
+    background-color: var(--color-folder-sky-blue) !important;
 }
 
-.nav-folder:has(div[data-path^="x"]) {
-    background-color: var(--color-folder-ocean) !important;
-}
+.nav-folder:has(div[data-path^="X"]) {
+    background-color: var(--color-folder-periwinkle) !important;
